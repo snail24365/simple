@@ -1,0 +1,33 @@
+let
+	integer f,p,tmp,i,n.
+in
+	f:=1;
+	p:=1;
+	n:=25;
+	i:=0;
+
+	while i < n do
+
+		if i = 0 then 
+				write i;
+				i:=i+1;
+		else
+				skip;
+		fi; 
+
+		if i < 2 then
+			
+				write i;
+				i:=i+1;
+		else
+
+				tmp:= f;
+				f :=  f + p;
+				p := tmp;
+		fi;
+
+	write f;
+	i:=i+1;
+
+	end;
+end
